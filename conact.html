@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+   <style>
+     *{
+            font-family:Georgia, 'Times New Roman', Times, serif
+         }
+    
+    .contact{    
+        background-image: url(h10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:black;
+    }
+    .cntct{
+        padding-left: 200px;
+        font-family:'Courier New', Courier, monospace
+    }
+    .container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 350px;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-container {
+    justify-self: end; /* Moves the form to the right */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 400px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    resize: none;
+}
+   </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-md">
+                
+              <a class="navbar-brand" href="#" style="font-weight: bolder;font-size: 30px;font-family:cursive;">THADATHIL <span style="color: rgb(245, 182, 11);font-family:cursive;">HOSPITAL</span></a>
+
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" onclick="window.location.href='home.html';" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="window.location.href='about.html';" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="window.location.href='conact.html';" href="#">CONTACT US</a>
+                </li>
+              </ul>
+          
+            </div>
+            </nav>
+            
+
+        <div class="contact">
+            <h1 style="text-align: center;padding: 30px;">CONTACT US</h1>
+            <div class="cntct">
+                <h5 style="font-weight: bold;">Ambulance :<span style="color: rgb(15, 15, 186);">+91 9492921796</span></h5><br>
+                <h5 style="font-weight: bold;">Appointment :<span style="color: rgb(15, 15, 186);">+91 (0) 9496555300</span> </h5><br>
+                <h5 style="font-weight: bold;">Location</h5>
+                <h5>Kadanad P.O, Kottayam-686653 Kerala, India</h5><br>
+                <h5 style="font-weight: bold;">Email-id : <span style="color: rgb(15, 15, 186);font-weight: lighter;"> thadthilhospital@gmail.com</span></h5>
+            </div>
+            
+            <div class="container">
+                <div class="form-container">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name"><br><br>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"><br><br>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message"></textarea><br><br>
+            
+                        <button type="submit" style="background-color: rgb(109, 101, 101);">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

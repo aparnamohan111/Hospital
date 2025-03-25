@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+       *{
+            font-family:Georgia, 'Times New Roman', Times, serif
+         }
+        .app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 89.8vh;
+            background-image: url(h6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-container {
+            width: 750px; /* Adjust width */
+            background:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+      
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container-md">
+        
+      <a class="navbar-brand" href="#" style="font-weight: bolder;font-size: 30px;font-family:cursive;">THADATHIL <span style="color: rgb(245, 182, 11);font-family:cursive;">HOSPITAL</span></a>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" onclick="window.location.href='home.html';" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="window.location.href='about.html';" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="window.location.href='conact.html';" href="#">CONTACT US</a>
+        </li>
+      </ul>
+  
+    </div>
+    </nav>
+        </nav>
+  <div class="app">
+    <div class="form-container">
+        <h4 class="text-center mb-4">Appointment Form</h4>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputname" class="form-label">Full Name <sup style="color: red;">*</sup></label>
+                <input type="text" class="form-control" id="exampleInputname" required>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                  <label for="exampleInputPhone" class="form-label">Phone Number<sup style="color: red;">*</sup></label>
+                  <input type="number" class="form-control" id="exampleInputPhone" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <label for="exampleInputAge" class="form-label">Age</label>
+                  <input type="number" class="form-control" id="exampleInputAge" required>
+              </div>
+          </div>
+
+            <div class="mb-3">
+                <label for="exampleInputdate" class="form-label">Date</label>
+                <input type="date" class="form-control" id="exampleInputdate" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputDept" class="form-label">Department</label>
+              <select class="form-select" id="exampleInputDept" required>
+                  <option value="" selected disabled>Select Department</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Gynaecology">Oncology</option>
+                  <option value="Orthopaedics">Orthopaedics</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Gynaecology">Gynaecology</option>
+              </select>
+          </div>
+
+          <!-- Dropdown for Preferred Doctor -->
+          <div class="mb-3">
+              <label for="exampleInputDct" class="form-label">Doctor</label>
+              <select class="form-select" id="exampleInputDct">
+                  <option value="" selected disabled>Select Doctor</option>
+                  <option value="Dr. Smith">Dr. Aparna Mohan</option>
+                  <option value="Dr. Johnson">Dr.Christin Benny</option>
+                  <option value="Dr. Patel">Dr. Sona Mohan</option>
+                  <option value="Dr. Lee">Dr. Farhan</option>
+                  <option value="Dr. Smith">Dr. Nikhil P Mohanan</option>
+                  <option value="Dr. Johnson">Dr. Nimesh PM</option>
+                  <option value="Dr. Patel">Dr. Gokul Mohanan</option>
+                  <option value="Dr. Lee">Dr. Swathy Krishna</option>
+                  <option value="Dr. Smith">Dr. Lakshmi Hari</option>
+                  <option value="Dr. Johnson">Dr. Akhil Somaraj</option>
+                  <option value="Dr. Patel">Dr. Anila Somaraj</option>
+                  <option value="Dr. Lee">Dr. Vishnu</option>
+                  <option value="Dr. Smith">Dr. Sreejith KP</option>
+                  <option value="Dr. Johnson">Dr. Libin</option>
+                  <option value="Dr. Patel">Dr. Vismaya</option>
+                  <option value="Dr. Lee">Dr. Reshma </option>
+                  <option value="Dr. Johnson">Dr. Aswathy</option>
+                  <option value="Dr. Patel">Dr. Algore</option>
+                  <option value="Dr. Lee">Dr. Athul</option>
+                  <option value="Dr. Smith">Dr. Ashin</option>
+                  <option value="Dr. Johnson">Dr. Bibin</option>
+                  <option value="Dr. Patel">Dr. Justy</option>
+                  <option value="Dr. Lee">Dr. Manu</option>
+                  <option value="Dr. Lee">Dr. Saranya</option>
+              </select>
+          </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+  </div>
+   
+
+</body>
+</html>
